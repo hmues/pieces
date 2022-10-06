@@ -1,0 +1,6 @@
+{
+  "eslint.rules.customizations": [
+    { "rule": "*", "severity": "warn" }
+  ],
+  "eslint.validate": ["typescript"]
+}
