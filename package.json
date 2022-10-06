@@ -1,0 +1,22 @@
+{
+  "name": "@hmues/pieces",
+  "version": "0.0.0",
+  "description": "Create and store Pieces real quic",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "npx tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmues/pieces.git"
+  },
+  "keywords": ["discord", "bot", "framework", "modular"],
+  "author": "hmues",
+  "license": "MIT",
+  "types": "./dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/hmues/pieces/issues"
+  },
+  "homepage": "https://github.com/hmues/pieces#readme"
+}
