@@ -1,3 +1,4 @@
+import { Awaitable } from '../util/types'
 import { Store } from './Store'
 
 /** Can be loaded by {@link Store | Stores}. */
@@ -20,6 +21,12 @@ export class Piece<O extends Piece.Options = Piece.Options> {
     this.store = options.store
     this.options = options
   }
+
+  /** Gets called when this {@link Piece} is being registered */
+  register(): Awaitable<void> {}
+
+  /** Gets called when this {@link Piece} is being deregistered */
+  deregister(): Awaitable<void> {}
 }
 
 export namespace Piece {
