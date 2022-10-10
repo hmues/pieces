@@ -2,7 +2,7 @@
   "name": "@hmues/pieces",
   "version": "0.0.0",
   "description": "Create and store Pieces real quic",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "npx tsc",
     "watch": "npx tsc -w",
