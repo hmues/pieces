@@ -1,6 +1,6 @@
 {
   "name": "@hmues/pieces",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Create and store Pieces real quic",
   "main": "./dist/index.js",
   "scripts": {
