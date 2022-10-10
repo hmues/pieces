@@ -10,5 +10,12 @@
         "ecmaVersion": "latest",
         "project": ["./tsconfig.json"],
         "sourceType": "module"
+    },
+    "rules": {
+        "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/space-before-function-paren": ["error", "never"],
+        "curly": ["error", "multi", "consistent"],
+        "generator-star-spacing": ["error", {"before": true, "after": false}],
+        "yield-star-spacing": ["error", {"before": false, "after": true}]
     }
 }
