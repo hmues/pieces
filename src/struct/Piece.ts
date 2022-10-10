@@ -27,6 +27,15 @@ export class Piece<O extends Piece.Options = Piece.Options> {
 
   /** Gets called when this {@link Piece} is being deregistered */
   deregister(): Awaitable<void> {}
+
+  /** {@link JSON.stringify | Stringify} this {@link Piece}. */
+  toJSON(): Piece.JSON {
+    return {
+      name: this.name,
+      path: this.path,
+      enabled: this.enabled
+    }
+  }
 }
 
 export namespace Piece {
@@ -36,5 +45,12 @@ export namespace Piece {
     readonly path: string
     readonly enabled: boolean
     readonly store: Store<any>
+  }
+
+  /** The {@link JSON.stringify | stringified} {@link Piece} */
+  export interface JSON {
+    readonly name: string
+    readonly enabled: boolean
+    readonly path: string
   }
 }
