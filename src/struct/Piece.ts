@@ -35,6 +35,6 @@ export namespace Piece {
     readonly name: string
     readonly path: string
     readonly enabled: boolean
-    readonly store: Store
+    readonly store: Store<any>
   }
 }
