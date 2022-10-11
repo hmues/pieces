@@ -3,7 +3,10 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "standard-with-typescript",
+    "extends": [
+        "standard-with-typescript",
+        "plugin:prettier/recommended"
+    ],
     "overrides": [
     ],
     "parserOptions": {
@@ -13,9 +16,6 @@
     },
     "rules": {
         "@typescript-eslint/no-namespace": "off",
-        "@typescript-eslint/space-before-function-paren": ["error", "never"],
-        "curly": ["error", "multi", "consistent"],
-        "generator-star-spacing": ["error", {"before": true, "after": false}],
-        "yield-star-spacing": ["error", {"before": false, "after": true}]
+        "curly": ["error", "multi", "consistent"]
     }
 }
