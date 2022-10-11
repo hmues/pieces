@@ -1,7 +1,8 @@
 src/
+img/
 .vscode/
-.gitignore
 
+.gitignore
 .eslintignore
 .eslintrc.json
 .prettierignore
